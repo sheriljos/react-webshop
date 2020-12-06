@@ -2,7 +2,6 @@ import React from 'react'
 import { Card, CardMedia, CardContent, CardActionArea, CardActions, Typography, IconButton, makeStyles } from '@material-ui/core';
 import AddShoppingCartIcon from '@material-ui/icons/AddShoppingCart';
 import useStyles from './style';
-import { ClassRounded } from '@material-ui/icons';
 
 const Product = ({ product }) => {
     const classes = useStyles();
@@ -29,7 +28,7 @@ const Product = ({ product }) => {
                 </CardContent>
             </CardActionArea>
             <CardActions className={classes.cardButton}>
-                <IconButton>
+                <IconButton aria-label="Add to shopping cart">
                     <AddShoppingCartIcon />
                 </IconButton>
             </CardActions>
